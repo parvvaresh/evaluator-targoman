@@ -30,8 +30,6 @@ This Python script uses the Targoman API to perform text translation between dif
    python translate.py
    ```
 
-anslated_text)
-```
 
 ## License
 This script is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -39,4 +37,3 @@ This script is licensed under the MIT License. See the [LICENSE](LICENSE) file f
 ## Credits
 - [Targoman](https://targoman.ir/) - For providing the translation API.
 
----
