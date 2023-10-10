@@ -37,6 +37,14 @@ Suppose you have the following Excel files in your directory:
 
 Running the script with the provided configuration will create a CSV file named "data.csv" containing the columns "refs-en" and "refs-fa" from the concatenated data.
 
+**Email to access this data :‌ a.parvaresh@itrc.ac.ir**
+
+**this data from Product safety testing and evaluation laboratory ITRC**
+
+![image](https://github.com/parvvaresh/datasets-for-MT-robustness/assets/89921883/3e31f4cf-517b-45c7-ae7e-68585bdd15cd)
+
+
+
 ## Output
 
 The script generates a CSV file named "data.csv" with the selected columns from the input Excel files. You can use this CSV file for further analysis or data processing.
