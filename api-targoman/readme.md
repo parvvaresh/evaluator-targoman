@@ -27,7 +27,8 @@ This Python script uses the Targoman API to perform text translation between dif
 
 6. Run the script using the following command:
    ```shell
-   python translate.py
+   git clone https://github.com/parvvaresh/datasets-for-MT-robustness/edit/main/api-targoman
+   pip3 install -r requirements.txt
    ```
 
 
