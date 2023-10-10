@@ -5,4 +5,4 @@ def Translate() -> str:
     fromLang = input("from lan  : ")
     toLang = input("to lan : ")
     if fromLang == "fa" and toLang == "en":
-        return translate("Bonjour", toLang="en", fromLang="fr")["result"]["tr"]['base'][0][1]
+        return translate(word, toLang=toLang, fromLang=fromLang)["result"]["tr"]
