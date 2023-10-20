@@ -1,3 +1,16 @@
+## evaluate Targoman
+We at the Telecommunication Research Center decided to test and evaluate the Tergoman machine translation system.
+This evaluation is done by 6 algorithms:
+- WER
+- BLEU
+- WER
+- GLEU
+- METEOR
+- CHRF(3)
+  
+we did it(You can read more about these 6 algorithms here)
+
+---
 ## about Targoman
 Targoman, a bilingual machine translation system, was developed in 2011 by a group of researchers at the Natural Language Processing and Machine Learning Laboratory at Amirkabir University of Technology. The project was initiated under the supervision of Dr. Shahram Khadivi and received support from the Telecommunication Research Center of Iran.
 
