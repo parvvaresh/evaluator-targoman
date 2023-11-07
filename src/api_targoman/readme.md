@@ -46,6 +46,3 @@ translation = result["result"]["tr"]["base"][0][1]
 print(translation)
 ```
 
-## Disclaimer
-
-Please note that this script relies on an external API provided by Targoman. Make sure you comply with their terms of service and usage policies. The default URL in the script may change, so always ensure that you are using the correct API endpoint.
