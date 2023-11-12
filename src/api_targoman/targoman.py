@@ -1,6 +1,3 @@
-
-
-
 import requests as req
 import json
 
@@ -31,11 +28,12 @@ def translate(word: str = "سلام", fromLang: str = "fa", toLang: str = "en") 
     return data
 
 
-def Translate(word:str, fromLang :str, toLang:str) -> str:
+def Translate(word: str, fromLang: str, toLang: str) -> str:
     if fromLang == "fa" and toLang == "en":
-        return translate(word, toLang=toLang, fromLang=fromLang)["result"]["tr"]["base"][0][1]
+        return translate(word, toLang=toLang, fromLang=fromLang)["result"]["tr"][
+            "base"
+        ][0][1]
     if fromLang == "en" and toLang == "fa":
-        return translate(word, toLang=toLang, fromLang=fromLang)["result"]["tr"]["base"][0][1]
- 
- 
- 
+        return translate(word, toLang=toLang, fromLang=fromLang)["result"]["tr"][
+            "base"
+        ][0][1]
