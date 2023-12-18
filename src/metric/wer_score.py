@@ -25,8 +25,8 @@ class wer:
           we use backtrcing method and dynamic programming
 
         """
-        pred = self._preproocess(pred)
-        ref = self._preproocess(ref)
+        self.pred = self._preproocess(pred)
+        self.ref = self._preproocess(ref)
 
         """
       Define the numbers used 
@@ -36,22 +36,22 @@ class wer:
         4 ---> substitution
     """
 
-        costs = np.zeros((1 + len(pred), 1 + len(ref)))
-        backtrace = np.zeros((1 + len(pred), 1 + len(ref)))
+        costs = np.zeros((1 + len(self.pred), 1 + len(self.ref)))
+        self.backtrace = np.zeros((1 + len(self.pred), 1 + len(self.ref)))
 
-        costs[0] = [j for j in range(0, len(ref) + 1)]
-        backtrace[0][:] = 2
+        costs[0] = [j for j in range(0, len(self.ref) + 1)]
+        self.backtrace[0][:] = 2
 
-        costs[:, 0] = [j for j in range(0, len(pred) + 1)]
-        backtrace[:][0] = 3
+        costs[:, 0] = [j for j in range(0, len(self.pred) + 1)]
+        self.backtrace[:][0] = 3
 
-        backtrace[0][0] = 10  # None
+        self.backtrace[0][0] = 10  # None
 
-        for row in range(1, len(pred) + 1):
-            for col in range(1, len(ref) + 1):
-                if pred[row - 1] == ref[col - 1]:
+        for row in range(1, len(self.pred) + 1):
+            for col in range(1, len(self.ref) + 1):
+                if self.pred[row - 1] == self.ref[col - 1]:
                     costs[row][col] = costs[row - 1][col - 1]
-                    backtrace[row][col] = 1
+                    self.backtrace[row][col] = 1
                 else:
                     substitution = costs[row - 1][col - 1]
                     delete = costs[row - 1][col]
@@ -59,35 +59,13 @@ class wer:
                     fainal_cost = min(delete, insert, substitution)
                     costs[row][col] = fainal_cost + 1
                     if fainal_cost == delete:
-                        backtrace[row][col] = 3
+                        self.backtrace[row][col] = 3
                     elif fainal_cost == insert:
-                        backtrace[row][col] = 2
+                        self.backtrace[row][col] = 2
                     elif fainal_cost == substitution:
-                        backtrace[row][col] = 4
+                        self.backtrace[row][col] = 4
 
-        i, j = len(pred), len(ref)
-        self.num_same, self.num_del, self.num_sub, self.num_ins = 0, 0, 0, 0
-
-        while i > 0 or j > 0:
-            if backtrace[i][j] == 1:
-                i -= 1
-                j -= 1
-                self.num_same += 1
-
-            if backtrace[i][j] == 4:
-                i -= 1
-                j -= 1
-                self.num_sub += 1
-
-            if backtrace[i][j] == 2:
-                j -= 1
-                self.num_ins += 1
-
-            if backtrace[i][j] == 3:
-                i -= 1
-                self.num_del += 1
-
-        return (self.num_del + self.num_sub + self.num_ins) / len(ref)
+        return costs[-1][-1] / len(self.ref)
 
     def _preproocess(self, text):
         """
@@ -105,6 +83,28 @@ class wer:
         return text
 
     def get_detail(self):
+        i, j = len(self.pred), len(self.ref)
+        self.num_same, self.num_del, self.num_sub, self.num_ins = 0, 0, 0, 0
+
+        while i > 0 or j > 0:
+            if self.backtrace[i][j] == 1:
+                i -= 1
+                j -= 1
+                self.num_same += 1
+
+            if self.backtrace[i][j] == 4:
+                i -= 1
+                j -= 1
+                self.num_sub += 1
+
+            if self.backtrace[i][j] == 2:
+                j -= 1
+                self.num_ins += 1
+
+            if self.backtrace[i][j] == 3:
+                i -= 1
+                self.num_del += 1
+
         return {
             "delete": self.num_del,
             "insert": self.num_ins,
