@@ -16,7 +16,8 @@ we did it(You can read more about these 6 algorithms here)
 
 special thanks to my dear teammate 🙏 : 
 
-[Faeezeh Gholamrezaee](https://github.com/)
+[Faeezeh Gholamrezaee]
+()
 
 
 ---
