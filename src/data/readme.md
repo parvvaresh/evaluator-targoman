@@ -96,7 +96,6 @@ This code is provided as-is and is open-source. You can use, modify, and distrib
 
 ---
 
-Feel free to customize the README according to your project's specific needs and requirements.
 
 
 
