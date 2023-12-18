@@ -10,9 +10,12 @@ This Python script performs an evaluation of translated sentences using various 
    pip install pandas matplotlib tqdm
    ```
 
-2. Place your reference dataset in a CSV file named "data.csv" in the same directory as the script. Ensure that the CSV file has two columns: one for reference sentences and another for target sentences.
+2. **Place your reference dataset in a CSV file named "data.csv" in the same directory as the script**
 
-3. Use the `eval_targoman` class to perform the evaluation. Here's an example of how to use it:
+    go to ->src ->data (copy data sets and rename to data.csv)
+   . Ensure that the CSV file has two columns: one for reference sentences and another for target sentences.
+
+4. Use the `eval_targoman` class to perform the evaluation. Here's an example of how to use it:
 
    ```python
    from eval_targoman import eval_targoman
@@ -26,7 +29,7 @@ This Python script performs an evaluation of translated sentences using various 
    - The `target_col` parameter is the name of the target sentence column in your CSV.
    - The `from_lan` and `to_lan` parameters define the source and target languages for translation.
 
-4. The evaluation process involves the following steps:
+5. The evaluation process involves the following steps:
    - Reading the CSV file with reference and target sentences.
    - Preprocessing the data, including removing any NaN values.
    - Filtering the dataset to keep sentences with a minimum length.
@@ -36,7 +39,7 @@ This Python script performs an evaluation of translated sentences using various 
    - Saving the results to a CSV file.
    - Displaying a plot of the scores.
 
-5. The class provides methods to access the results, save them to a CSV file, and display a plot of the scores.
+6. The class provides methods to access the results, save them to a CSV file, and display a plot of the scores.
 
 ## Disclaimer
 
