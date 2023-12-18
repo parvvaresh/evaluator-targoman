@@ -41,6 +41,8 @@ This Python script performs an evaluation of translated sentences using various 
   
 image of result : 
 ![result](https://github.com/parvvaresh/eval-targoman/assets/89921883/becb9773-d679-4705-85aa-5ae8123c4644)
+and see the result data sets:
+![image](https://github.com/parvvaresh/eval-targoman/assets/89921883/6e29955c-538d-43ca-998b-ae1f3578ebe9)
 
 
 
