@@ -43,6 +43,9 @@ image of result :
 ![result](https://github.com/parvvaresh/eval-targoman/assets/89921883/becb9773-d679-4705-85aa-5ae8123c4644)
 and see the result data sets:
 ![image](https://github.com/parvvaresh/eval-targoman/assets/89921883/6e29955c-538d-43ca-998b-ae1f3578ebe9)
+see the sample plot for 10 sentes : 
+![image](https://github.com/parvvaresh/eval-targoman/assets/89921883/9fbfbb8f-dbda-4122-8094-cd3753aad078)
+
 
 
 
