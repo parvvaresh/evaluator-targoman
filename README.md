@@ -9,7 +9,12 @@ This evaluation is done by 6 algorithms:
 - CHRF(3)
   
 we did it(You can read more about these 6 algorithms here)
-special thanks to my dear teammate : 
+
+
+
+
+
+special thanks to my dear teammate 🙏 : 
 
 [Faeezeh Gholamrezaee](https://github.com/)
 
