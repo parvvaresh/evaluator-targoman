@@ -38,6 +38,11 @@ This Python script performs an evaluation of translated sentences using various 
    - Calculating and normalizing scores for metrics including BLEU, CHRF, WER, METEOR, NIST, and GLEU.
    - Saving the results to a CSV file.
    - Displaying a plot of the scores.
+  
+image of result : 
+![result](https://github.com/parvvaresh/eval-targoman/assets/89921883/becb9773-d679-4705-85aa-5ae8123c4644)
+
+
 
 6. The class provides methods to access the results, save them to a CSV file, and display a plot of the scores.
 
