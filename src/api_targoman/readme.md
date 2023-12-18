@@ -30,6 +30,12 @@ This Python script is a client for the Targoman Translation API provided by `tar
    print(translation)
    ```
 
+   ```pbash
+   --> hello
+   ```
+
+
+
    The `Translate` function handles the language direction and returns the translated text directly.
 
 ## API Request
