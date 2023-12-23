@@ -7,17 +7,13 @@ This evaluation is done by 6 algorithms:
 - GLEU
 - METEOR
 - CHRF(3)
-  
-we did it(You can read more about these 6 algorithms here)
-
-
 
 
 
 special thanks to my dear teammate 🙏 : 
 
 [Faeezeh Gholamrezaee](https://github.com/faezeh-gholamrezaie)
-
+[Mahsa asghari](https://github.com/faezeh-gholamrezaie)
 
 ---
 ## about Targoman
