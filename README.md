@@ -13,7 +13,7 @@ This evaluation is done by 6 algorithms:
 special thanks to my dear teammate 🙏 : 
 
 [Faeezeh Gholamrezaee](https://github.com/faezeh-gholamrezaie)
-[Mahsa asghari](https://github.com/faezeh-gholamrezaie)
+[Mahsa asghari](https://github.com/mahsa33/)
 
 ---
 ## about Targoman
