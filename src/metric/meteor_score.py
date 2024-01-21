@@ -131,3 +131,4 @@ class meteor:
         words = text.split()
         num_words = [tuple([index, words[index]]) for index in range(len(words))]
         return num_words
+        #this
