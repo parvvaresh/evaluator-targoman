@@ -25,7 +25,7 @@ class eval_targoman:
     def __init__(self, ref_col: str, target_col: str, from_lan: str, to_lan: str):
         self.df = pd.read_csv(get_path_csv())
         self.df = self._pre_process()
-        self.df = filter_lenght(self.df, [ref_col, target_col], 6)
+        self.df = filter_lenght(self.df, [ref_col, target_col], 6) #6 for max n-gram in metrics
 
         self.result = pd.DataFrame()
 
